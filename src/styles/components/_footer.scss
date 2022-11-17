@@ -1,0 +1,70 @@
+.footer {
+  margin: 3rem 0;
+  padding: 5rem 0;
+  display: flex;
+  height: 50rem;
+  justify-content: space-between;
+  @include small-screen {
+    flex-direction: column-reverse;
+    margin: 30rem 0 0 0;
+    padding: 5rem 0;
+  }
+
+  &-about {
+    width: 30%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--gray);
+    @include small-screen {
+      width: 50%;
+      margin-top: 5rem;
+    }
+
+    &-img {
+      margin-bottom: 3rem;
+
+      img {
+        @include small-screen {
+          height: 5rem;
+        }
+      }
+    }
+
+    &-text {
+      height: 15rem;
+      line-height: 1.5;
+    }
+  }
+  &-links {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @include small-screen {
+      width: 100%;
+    }
+    &-box {
+      font-size: 2rem;
+      &-header {
+        font-weight: 700;
+      }
+      p {
+        color: var(--gray);
+        font-weight: 400;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.hiring {
+  background: #65e4a3;
+  border-radius: 120px;
+  margin-left: 5px;
+  color: var(--secondary-black-text-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  text-align: center;
+  padding: 0.5rem 1.4rem;
+}

@@ -1,0 +1,93 @@
+.blog {
+  margin-top: 4rem;
+  &-subheading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--secondary-black-text-color);
+    margin: 0;
+    line-height: 32px;
+  }
+  &-title {
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+    color: var(--secondary-black-text-color);
+    line-height: 84px;
+    @include small-screen {
+      font-size: 3rem;
+      line-height: 42px;
+    }
+  }
+  &-news {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include small-screen {
+      flex-direction: column;
+    }
+
+    &-image {
+      width: 40%;
+
+      @include small-screen {
+        width: 80%;
+        margin: 0 auto;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        @include medium-screen {
+          width: 40rem;
+        }
+        @include small-screen {
+          height: 30rem;
+          width: 45rem;
+        }
+      }
+    }
+    &-text {
+      width: 50%;
+      @include small-screen {
+        width: 80%;
+        margin: 5rem auto;
+      }
+      &-header {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        &-text-one {
+          font-weight: 700;
+          color: var(--secondary-black-text-color);
+        }
+        &-text-two {
+          margin-left: 1rem;
+          color: var(--gray);
+        }
+      }
+      &-sub {
+        font-size: 4.5rem;
+        font-weight: 400;
+        font-family: "Manrope", sans-serif;
+        line-height: 1.5;
+      }
+      &-profile {
+        display: flex;
+        align-items: center;
+        
+        &-name {
+          font-size: 1.6rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .divider {
+    margin: 5rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-black-text-color);
+  }
+}
