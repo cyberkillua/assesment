@@ -20,7 +20,7 @@ body {
 }
 @media (max-width: 49em) {
   body {
-    padding: 5rem 4rem;
+    padding: 5rem 2rem;
   }
 }
 
@@ -55,7 +55,7 @@ body {
 }
 @media (max-width: 49em) {
   .header .header-image img {
-    height: 4rem;
+    height: 3rem;
   }
 }
 .header .header-links {
